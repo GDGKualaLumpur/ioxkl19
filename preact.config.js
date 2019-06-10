@@ -10,8 +10,7 @@ export default (config, env, helpers) => {
 			'process.env.PUBLIC_PATH': JSON.stringify(config.output.publicPath || '/')
 		}),
 		new CopyWebpackPlugin([
-			{ from: `${__dirname}/src/robots.txt` },
-			{ from: `${__dirname}/src/sitemap.xml` }
+			{ from: `${__dirname}/src/robots.txt` }
 		])
 	);
 
